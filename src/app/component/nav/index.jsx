@@ -1,18 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import styles from "./style.module.scss";
 
 export default function Index() {
+  const [isActive, SetIsActive] = useState(false);
+
   return (
     <>
-      <div className="fixed w-full z-50 text-whitePrimary mix-blend-difference">
-        <div className="absolute w-full py-8 px-32 ">
-          <div className="flex items-center justify-between text-base font-medium ">
-            <h1>Logo</h1>
-            <div className="flex gap-14 ">
-              <h1>Home</h1>
-              <h1>about</h1>
-              <h1>work</h1>
-            </div>
-          </div>
+      <div onClick={() => SetIsActive(!isActive)} className="fixed  z-20 right-0 m-5 h-20 w-20 rounded-full bg-lime-400 cursor-pointer flex items-center justify-center ">
+        <div className={`${styles.burger}  ${isActive ? styles.burgerActive : ""}`}>
+          
         </div>
       </div>
     </>

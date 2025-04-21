@@ -46,7 +46,7 @@ export default function Home() {
     <main className="relative" ref={scrollSmooth}>
       <div className="bg-[#F2F7F2]">
         <StickyCursore />
-        {/* <Navbar /> */}
+        <Navbar />
 
         <HeroSection />
         {/* <Hero /> */}

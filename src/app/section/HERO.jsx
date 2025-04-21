@@ -23,14 +23,14 @@ const HERO = () => {
           {/* 2 */}
           <div className={`${style} hidden md:flex col-span-20 lg:row-span-2 xl:row-span-2`}></div>
           {/* 3 */}
-          <div className={`${style} hidden md:flex xl:row-span-2`}></div>
+          <div className={`${style} hidden xl:flex xl:row-span-2`}></div>
 
           {/* 4 */}
-          <div className={`${style} hidden md:flex col-span-3 xl:row-span-2`}></div>
+          <div className={`${style} hidden xl:flex col-span-3 xl:row-span-2`}></div>
 
           {/* 5 */}
-          <div className={` ${style} hidden md:flex col-span-15 px-4 xl:row-span-2`}></div>
-          <div className={` ${style} hidden md:flex col-span-5 px-4 xl:row-span-2`}></div>
+          <div className={` ${style} hidden xl:flex col-span-15 px-4 xl:row-span-2`}></div>
+          <div className={` ${style} hidden xl:flex col-span-5 px-4 xl:row-span-2`}></div>
 
           {/* 5 */}
           <div className={`${style} hidden md:flex row-span-2`}></div>
@@ -44,7 +44,7 @@ const HERO = () => {
           <div className={`${style} h-60 md:h-auto col-span-24 md:col-span-11 lg:text-xl xl:text-5xl  text-textPrimary md:row-span-2 px-6`}>
             <div className="">
               <img src="/icon/star.png" alt="star" className="w-10 lg:w-8" />
-              <h1 className="text-4xl lg:text-2xl xl:text-5xl font-semibold leading-tight">
+              <h1 className="text-4xl lg:text-4 xl xl:text-5xl font-semibold leading-tight">
                 Every pixel
                 <span className="inline-flex px-2">
                   <div className="w-10 h-10 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
@@ -107,13 +107,7 @@ const HERO = () => {
           {/* 12 */}
           <div className={`${style} hidden md:flex  col-span-7`}>
             <div className="w-full flex justify-start">
-              <div className="relative inline-flex ml-5 lg:px-3 lg:py-2 xl:px-4 xl:py-3 bg-lime-600 text-left text-base font-normal leading-[1.5] text-white">
-                Summary
-                {/* Panah besar (border-l artinya mengarah ke kanan) */}
-                <span className="absolute top-1/2 border-r-[20px] left-[-20px] -translate-y-1/2 w-0 h-0 border-y-[10px] border-y-transparent border-r-lime-600"></span>
-                {/* Panah kecil dalamnya, warna sama dengan bg tombol */}
-                <span className="absolute top-1/2 border-r-[15.5px] left-[-15.5px] -translate-y-1/2 w-0 h-0 border-y-[7.8px] border-y-transparent border-r-lime-600"></span>
-              </div>
+              <h1 className="rotate-90 lg:text-lg font-medium text-textPrimary/50">Summary</h1>
             </div>
           </div>
 
