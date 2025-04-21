@@ -58,7 +58,7 @@ export default function Home() {
                   <div className="text-5xl md:text-9xl text-white mix-blend-overlay">UI/UX Designer</div>
                   <p className="absolute text-xl text-white mix-blend-overlay">Rofianan</p>
                 </div>
-                <img src="/bg/bgParalax.png" className="min-h-svh object-cover object-center blur-sm -z-10"></img>
+                <img src="/bg/bgParalax.png" className="min-h-svh object-cover object-center w-full blur-sm -z-10"></img>
               </motion.div>
             </div>
           </div>
