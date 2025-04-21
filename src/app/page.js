@@ -10,12 +10,8 @@ import StickyCursore from "./component/stickyCursore";
 import Capability from "./section/about/Capability";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "./component/footer";
-import Button from "./component/button";
-import HeroSection from "./section/HERO";
 
-import Magnetic from "./component/animate/magnetic";
-import main from "./section/project";
-import Lenis from "lenis";
+import HeroSection from "./section/HERO";
 
 export default function Home() {
   const scrollSmooth = useRef();
@@ -35,7 +31,6 @@ export default function Home() {
       scroll?.destroy();
     };
   }, []);
-
 
   // Paralax
   const ref = useRef(null);
