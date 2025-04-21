@@ -9,12 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "@next/font": "^14.2.15",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.1",
+    "gsap": "^3.12.7",
+    "locomotive-scroll": "^5.0.0-beta.21",
+    "lucide-react": "^0.487.0",
+    "matter-js": "^0.20.0",
+    "next": "15.1.6",
+    "randomcolor": "^0.6.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.85.0",
+    "sweetalert2": "^11.17.2"
   },
   "devDependencies": {
+    "@types/node": "22.14.0",
+    "@types/react": "19.1.0",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwind-corner-smoothing": "^1.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.8.3"
   }
 }
