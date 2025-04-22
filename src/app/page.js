@@ -4,7 +4,7 @@ import { Hero } from "./section/HeroSection";
 import Project from "./section/project";
 import ProjectDribble from "./section/projectDribble";
 import About from "./section/about";
-import Navbar from "./component/nav";
+import Header from "./component/Header";
 import Logo from "./component/logo";
 import StickyCursore from "./component/stickyCursore";
 import Capability from "./section/about/Capability";
@@ -46,7 +46,7 @@ export default function Home() {
     <main className="relative" ref={scrollSmooth}>
       <div className="bg-[#F2F7F2]">
         <StickyCursore />
-        <Navbar />
+        <Header />
 
         <HeroSection />
         {/* <Hero /> */}
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Project />
+        {/* <Project /> */}
         <div data-scroll data-scroll-speed="0.5" className="bg-[#0a0a0a] grid content-center min-h-screen mx-1 rounded-lg">
           <About />
           <Capability />
