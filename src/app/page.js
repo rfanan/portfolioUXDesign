@@ -71,13 +71,13 @@ export default function Home() {
         </div>
         <ProjectDribble />
         <div className="relative">
+          <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen">
+            <div className="text-9xl text-white mix-blend-overlay">Looking for job</div>
+            <p className="absolute text-xl text-white mix-blend-luminosity">😊</p>
+          </div>
           <div ref={ref} className="relative flex items-center justify-center min-h-svh overflow-hidden " style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
             <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
               <motion.div style={{ y }} className="relative flex flex-wrap w-full h-full">
-                <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen">
-                  <div className="text-9xl text-white mix-blend-overlay">Looking for job</div>
-                  <p className="absolute text-xl text-white mix-blend-luminosity">😊</p>
-                </div>
                 <video className="w-full min-h-svh object-cover object-center" autoPlay loop playsInline muted>
                   <source src={"/video/Confused.webm"} type="video/mp4" />
                 </video>
