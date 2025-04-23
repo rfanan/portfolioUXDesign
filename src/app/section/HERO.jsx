@@ -7,7 +7,7 @@ import Social from "../component/social";
 import Magnet from "../component/animate/magnetic";
 
 const HERO = () => {
-  const style = "flex justify-center items-center md:border-[0.5px] border-lime-400/40";
+  const style = "flex justify-center items-center md:border-[0.5px] border-slate-400/10";
 
   return (
     <main className="min-h-screen w-full items-center overflow-hidden relative" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
