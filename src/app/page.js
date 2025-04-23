@@ -50,13 +50,13 @@ export default function Home() {
 
         <HeroSection />
         {/* <Hero /> */}
-        <div className="relative">
+        <div data data-sroll-speed="1" className="relative">
           <div ref={ref} className="relative flex items-center justify-center min-h-svh overflow-hidden " style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
-            <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
+            <div className="fixed top-[-10vh] right-0 h-[120vh] w-full">
               <motion.div style={{ y }} className="relative flex flex-wrap w-full h-full">
-                <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen">
+                <div className="absolute inset-0 flex flex-col items-center justify-center min-h-svh">
                   <div className="text-5xl md:text-9xl text-white mix-blend-overlay">UI/UX Designer</div>
-                  <p className="absolute text-xl text-white mix-blend-overlay">Rofianan</p>
+                  <p className="text-xl text-white mix-blend-overlay">Rofianan</p>
                 </div>
                 <img src="/bg/bgParalax.png" className="min-h-svh object-cover object-center w-full -z-10"></img>
               </motion.div>
@@ -71,13 +71,13 @@ export default function Home() {
         </div>
         <ProjectDribble />
         <div className="relative">
-          <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen">
-            <div className="text-9xl text-white mix-blend-overlay">Looking for job</div>
-            <p className="absolute text-xl text-white mix-blend-luminosity">😊</p>
-          </div>
           <div ref={ref} className="relative flex items-center justify-center min-h-svh overflow-hidden " style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
             <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
               <motion.div style={{ y }} className="relative flex flex-wrap w-full h-full">
+                <div className="absolute inset-0 flex flex-col items-center justify-center min-h-svh">
+                  <div className="text-5xl md:text-9xl text-white mix-blend-overlay">Looking for job</div>
+                  <p className="absolute text-xl text-white mix-blend-luminosity">😊</p>
+                </div>
                 <video className="w-full min-h-svh object-cover object-center" autoPlay loop playsInline muted>
                   <source src={"/video/Confused.webm"} type="video/mp4" />
                 </video>

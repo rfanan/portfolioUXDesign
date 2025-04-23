@@ -73,7 +73,7 @@ export default function Button(props) {
       type={type}
       className={clsx(
         className,
-        "[&>svg]:h-7 [&>svg]:w-7 [&>svg]:hover:bg-black overflow-hidden rounded-full font-semibold text-white hover:text-black inline-flex items-center justify-center transition-colors duration-200 ease-in-out"
+        "[&>svg]:h-7 [&>svg]:w-7 [&>svg]:hover:bg-black overflow-hidden rounded-full font-semibold text-white hover:text-black  items-center justify-center transition-colors duration-200 ease-in-out"
       )}
       {...rest}
     >
