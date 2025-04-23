@@ -19,15 +19,7 @@ export default function index({ children, className }) {
 
   const { x, y } = position;
   return (
-    <motion.div
-      className={className}
-      style={{ position: "relative" }}
-      ref={ref}
-      onMouseMove={handleMouse}
-      onMouseLeave={reset}
-      animate={{ x, y }}
-      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-    >
+    <motion.div className={`${className} relative`} ref={ref} onMouseMove={handleMouse} onMouseLeave={reset} animate={{ x, y }} transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}>
       {children}
     </motion.div>
   );

@@ -5,7 +5,7 @@ import clsx from "clsx";
 export default function Button(props) {
   const buttonRef = useRef(null);
   const flairRef = useRef(null);
-  const { className = "bg-[#222831] text-white px-8 py-6", children, text, type = "submit", ...rest } = props;
+  const { className = "bg-[#222831] relative py-7 px-7 text-white ", children, text, type = "submit", ...rest } = props;
 
   useEffect(() => {
     const button = buttonRef.current;
@@ -73,13 +73,13 @@ export default function Button(props) {
       type={type}
       className={clsx(
         className,
-        "[&>svg]:h-7 [&>svg]:w-7 [&>svg]:hover:bg-black relative overflow-hidden w-fit rounded-full font-semibold text-white hover:text-black inline-flex items-center justify-center transition-colors duration-200 ease-in-out"
+        "[&>svg]:h-7 [&>svg]:w-7 [&>svg]:hover:bg-black overflow-hidden rounded-full font-semibold text-white hover:text-black inline-flex items-center justify-center transition-colors duration-200 ease-in-out"
       )}
       {...rest}
     >
       {/* Flair */}
       <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0)", transformOrigin: "0 0", willChange: "transform" }} ref={flairRef}>
-        <div className="absolute w-[170%] aspect-square bg-[#67AE6E] rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute w-[170%] aspect-square bg-lime-400  rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       {/* Label */}

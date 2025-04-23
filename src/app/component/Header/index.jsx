@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import styles from "./style.module.scss";
 import { AnimatePresence } from "framer-motion";
 import Nav from "../Header/Nav/index";
+import Button from "../button";
+import Magnetic from "../animate/magnetic";
 
 export default function Index() {
   const [isActive, SetIsActive] = useState(false);
 
   return (
     <>
-      <div onClick={() => SetIsActive(!isActive)} className="fixed z-50 right-0 m-5 h-20 w-20 rounded-full bg-lime-400 cursor-pointer flex items-center justify-center ">
-        <div className={`${styles.burger}  ${isActive ? styles.burgerActive : ""}`}></div>
+      <div className="fixed top-0 right-0 m-5 z-50">
+        <Magnetic>
+          <Button onClick={() => SetIsActive(!isActive)} className={` ${isActive ? "bg-lime-400" : "bg-PrimaryBlack"} relative h-20 w-20 cursor-pointer flex items-center justify-center`}>
+            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
+          </Button>
+        </Magnetic>
       </div>
       <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
     </>

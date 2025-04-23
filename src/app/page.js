@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <Project /> */}
+        <Project />
         <div data-scroll data-scroll-speed="0.5" className="bg-[#0a0a0a] grid content-center min-h-screen mx-1 rounded-lg">
           <About />
           <Capability />

@@ -7,13 +7,13 @@ import Social from "../component/social";
 import Magnet from "../component/animate/magnetic";
 
 const HERO = () => {
-  const style = "flex justify-center items-center md:border border-slate-400/50";
+  const style = "flex justify-center items-center md:border-[0.5px] border-lime-400/40";
 
   return (
     <main className="min-h-screen w-full items-center overflow-hidden relative" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
       <div className="grid place-content-center min-h-screen">
         {/* <Social /> */}
-        <div className={`grid grid-cols-24 md:h-[560px] xl:min-h-screen overflow-hidden`}>
+        <div className={`grid grid-cols-24 md:h-[560px]  xl:min-h-screen overflow-hidden`}>
           {/* 0 */}
           <div className={`${style} hidden md:flex lg:row-span-2 xl:row-span-2`}></div>
 
