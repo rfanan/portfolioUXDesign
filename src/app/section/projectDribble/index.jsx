@@ -69,7 +69,7 @@ export default function index() {
               <Magnet>
                 <Button
                   data-scroll
-                  data-scroll-speed="0.1"
+                  data-scroll-speed="0.2"
                   onClick={() => window.open("https://dribbble.com/Nyutakun", "_blank")}
                   className="bg-[#222831] px-10 py-10 text-sm xl:px-12 xl:py-12 xl:text-2xl aspect-square"
                 >
@@ -82,8 +82,8 @@ export default function index() {
               </Magnet>
             </div>
           </div>
-          <div data-scroll data-scroll-speed="0.1" className="border-b w-full bg-gray-100 my-2 xl:my-6" />
-          <div data-scroll data-scroll-speed="0.1" className=" grid grid-cols-1 gap-y-10 md:gap-6 md:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center">
+          <div data-scroll data-scroll-speed="0.2" className="border-b w-full bg-gray-100 my-2 xl:my-6" />
+          <div data-scroll data-scroll-speed="0.2" className=" grid grid-cols-1 gap-y-10 md:gap-6 md:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center">
             {loading ? (
               <p className="text-green-700 text-center">Loading...</p>
             ) : (
