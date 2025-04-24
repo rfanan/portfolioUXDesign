@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
         <Project />
-        <div className="bg-[#161616]  grid content-center min-h-screen mx-1 rounded-lg">
+        <div className="bg-[#161616]  grid content-center min-h-screen py-10 mx-1 rounded-lg">
           <About />
           <Capability />
         </div>
