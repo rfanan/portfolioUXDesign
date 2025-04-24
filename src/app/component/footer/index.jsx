@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import MatterScene from "../../test";
 import Magnet from "../../component/animate/magnetic";
+import Button from "../button";
+import { ArrowLeft, ArrowRightCircle } from "lucide-react";
 
 export default function Index() {
   const [LocalTime, setLocalTime] = useState(null);
@@ -18,19 +20,20 @@ export default function Index() {
       <div style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }} className="relative overflow-hidden min-h-screen">
         <div className="fixed top-0 w-full">
           <div className="relative bg-PrimaryBlack text-slate-100 min-h-svh">
-            <div className="absolute w-full flex justify-between p-6">
-              <span>Rofianan</span>
-              <span>UI/UX Designer</span>
-            </div>
             <div className="absolute inset-x-0 top-1/4 xl:top-[15%] flex flex-col justify-center items-center z-50 ">
               <div className="z-50" onClick={() => alert("halo")}>
                 <h1 className="text-6xl md:text-8xl xl:text-9xl">Get in touch</h1>
               </div>
-              <Magnet className="z-50 ">
-                <div>Thank you for effort</div>
+              <Magnet className="z-50 pt-2">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Rofianan05@gmail.com&su=Halo&body=Write%20message" target="_blank" rel="noopener noreferrer">
+                  <Button className="relative text-sm flex gap-x-2 h-14 w-30 px-5 outline ">
+                    <ArrowRightCircle size={17} />
+                    Rofianan05@gmail.com
+                  </Button>
+                </a>
               </Magnet>
             </div>
-            <div className="absolute bottom-1/3 px-5 md:bottom-52 lg:bottom-1/4 xl:bottom-1/4 z-0 inset-x-0">
+            <div className="absolute bottom-1/3 px-5 md:bottom-52 lg:bottom-[17%] xl:bottom-1/4 z-0 inset-x-0">
               <MatterScene />
             </div>
             {/* footer */}
