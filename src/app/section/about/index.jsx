@@ -20,7 +20,7 @@ export default function Index() {
 
   return (
     <>
-      <div className="mx-8 md:mx-14 lg:mx-32 xl:mx-52 justify-center py-6">
+      <div data-scroll data-scroll-delay="0.1" data-scroll-speed="0.1" className="mx-8 md:mx-14 lg:mx-32 xl:mx-52 justify-center py-10">
         <div className="grid grid-cols-2 w-full content-center text-[#f2f2f2]">
           <div className="text-sm md:text-base xl:text-lg">
             <div>{"{ A bit of me. }"}</div>

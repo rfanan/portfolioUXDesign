@@ -50,7 +50,7 @@ export default function Home() {
 
         <HeroSection />
         {/* <Hero /> */}
-        <div data data-sroll-speed="1" className="relative">
+        <div className="relative">
           <div ref={ref} className="relative flex items-center justify-center min-h-svh overflow-hidden " style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
             <div className="fixed top-[-10vh] right-0 h-[120vh] w-full">
               <motion.div style={{ y }} className="relative flex flex-wrap w-full h-full">
@@ -63,9 +63,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <Project />
-        <div data-scroll data-scroll-speed="0.5" className="bg-[#0a0a0a] grid content-center min-h-screen mx-1 rounded-lg">
+        <div className="bg-[#161616]  grid content-center min-h-screen mx-1 rounded-lg">
           <About />
           <Capability />
         </div>
