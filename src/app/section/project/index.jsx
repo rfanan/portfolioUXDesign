@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Photocomics",
-    category: "Design & Web Development",
+    category: "Design & Development",
     color: "black",
     src: "PhotoComics.png",
   },
