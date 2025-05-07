@@ -10,10 +10,10 @@ const HERO = () => {
   const style = "flex justify-center items-center md:border-[0.5px] border-slate-400/10";
 
   return (
-    <main className="min-h-screen w-full items-center overflow-hidden relative" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
+    <main className=" w-full items-center overflow-hidden relative" style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
       <div className="grid place-content-center min-h-screen">
         {/* <Social /> */}
-        <div className={`grid grid-cols-24 md:h-[560px]  xl:min-h-screen overflow-hidden`}>
+        <div className={`grid grid-cols-24  md:h-[560px]  xl:min-h-screen overflow-hidden`}>
           {/* 0 */}
           <div className={`${style} hidden md:flex lg:row-span-2 xl:row-span-2`}></div>
 
@@ -41,16 +41,16 @@ const HERO = () => {
           </div>
 
           {/* 7 */}
-          <div className={`${style} h-60 md:h-auto col-span-24 md:col-span-11 lg:text-xl xl:text-5xl  text-textPrimary md:row-span-2 px-6`}>
+          <div className={`${style}  md:h-auto col-span-24 md:col-span-11 lg:text-xl xl:text-5xl  text-textPrimary md:row-span-2 px-6`}>
             <div className="">
-              <img src="/icon/star.png" alt="star" className="w-10 lg:w-8" />
-              <h1 className="text-4xl lg:text-4 xl xl:text-5xl font-semibold leading-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-5xl font-semibold leading-snug md:leading-relaxed">
+                <img src="/icon/star.png" alt="star" className="w-16 lg:w-14 py-4 md:py-0 " />
                 Every pixel
-                <span className="inline-flex px-2">
-                  <div className="w-10 h-10 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
+                <span className="inline-flex justify-center items-center px-2">
+                  <div className="w-14 h-14 md:w-10 md:h-10 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
                     <PenTool color="#ffffff" className="w-4 h-4 lg:w-4 lg:h-4" />
                   </div>
-                  <div className="w-10 h-10 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
+                  <div className="w-14 h-14 md:w-10 md:h-10 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
                     <Spline color="#ffffff" className="w-4 h-4 lg:w-4 lg:h-4" />
                   </div>
                 </span>
@@ -72,11 +72,11 @@ const HERO = () => {
 
           {/* 11 */}
           <div className={`${style}  h-60 md:h-auto col-span-24 md:col-span-13 px-6 text-textPrimary/50 flex-col lg:gap-y-5 xl:gap-y-10`}>
-            <h1 className="lg:text-sm xl:text-lg">
+            <h1 className="text-sm lg:text-sm xl:text-lg">
               Hey there! <a className="inline-flex transform px-2 font-medium -rotate-3 bg-lime-500 z-50"> I'm Rofianan </a>, Thanks for visiting my portfolio! I hope you enjoy exploring my work, If
               you'd like to connect or know more about me, feel free to check out my social media — Who knows? We might become friends or even collaborate on something awesome in the future. 😊
             </h1>
-            <div className="flex lg:text-sm xl:text-lg w-full md:gap-x-4 text-textPrimary/50 cursor-pointer">
+            <div className="flex text-sm gap-x-2 lg:text-sm xl:text-lg w-full md:gap-x-4 text-textPrimary/50 cursor-pointer">
               <div className="relative inline-flex group cursor-pointer">
                 <Magnet>
                   <h1 className="hover:text-textPrimary  duration-200 transition-all ease-in-out " onClick={() => window.open("https://www.linkedin.com/in/rofi-anan/", "_blank")}>

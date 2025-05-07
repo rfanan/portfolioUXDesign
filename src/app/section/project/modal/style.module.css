@@ -1,8 +1,7 @@
 .modalContainer {
-  height: 300px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   position: absolute;
-  background-color: white;
   overflow: hidden;
   pointer-events: none;
   display: flex;

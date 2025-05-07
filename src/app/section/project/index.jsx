@@ -10,22 +10,22 @@ import Magnet from "../../component/animate/magnetic";
 
 const projects = [
   {
-    title: "AESPA",
-    category: "Design & Development",
-    color: "black",
-    src: "1.png",
-  },
-  {
-    title: "Pertamina",
-    category: "Design & Development",
-    color: "black",
-    src: "2.png",
-  },
-  {
-    title: "Telkom",
+    title: "Kalem",
     category: "UI/UX Design (Mobile)",
     color: "black",
-    src: "1.png",
+    src: "kalem.png",
+  },
+  {
+    title: "Photocomics",
+    category: "Design & Web Development",
+    color: "black",
+    src: "PhotoComics.png",
+  },
+  {
+    title: "Maxim",
+    category: "UI/UX Design",
+    color: "black",
+    src: "maximthumbnail.png",
   },
   {
     title: "Telkom",

@@ -79,8 +79,8 @@ export default function index({ modal, projects }) {
           {projects.map((project, index) => {
             const { src } = project;
             return (
-              <div className={`${styles.modal} bg-black`} key={`modal_${index}`}>
-                <Image src={`/image/${src}`} width={300} height={0} alt="image" style={{ width: "auto", height: "auto" }} />
+              <div className={`${styles.modal}`} key={`modal_${index}`}>
+                <Image src={`/image/${src}`} width={450} height={450} alt="image" className="w-96 h-auto" />
               </div>
             );
           })}
@@ -89,7 +89,7 @@ export default function index({ modal, projects }) {
 
       <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
       <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>
-        view
+        "under maintenance"
       </motion.div>
     </>
   );
