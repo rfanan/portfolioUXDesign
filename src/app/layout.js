@@ -1,4 +1,5 @@
-import { Gabarito, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = {
@@ -8,12 +9,6 @@ export const metadata = {
     icon: "/icon/polygon.svg",
   },
 };
-
-const font = Gabarito({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 const font2 = Outfit({
   subsets: ["latin"],
   weight: ["400"],
@@ -22,7 +17,10 @@ const font2 = Outfit({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${font2.className} antialiased`}>{children}</body>
+      <body className={`${font2.className} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

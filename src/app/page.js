@@ -47,7 +47,7 @@ export default function Home() {
       <div className="bg-[#F2F7F2]">
         <StickyCursore />
         <Header />
-
+        {/* pw supabase project portfolio JVTZbmZezhMXqKbz */}
         <HeroSection />
         {/* <Hero /> */}
         <div className="relative">

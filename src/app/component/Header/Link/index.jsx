@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { menuSlide, slide, scale } from "../anim";
+import {slide, scale } from "../anim";
 
 export default function Index({ data, isActive }) {
   const { title, index, href } = data;
