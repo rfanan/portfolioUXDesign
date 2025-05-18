@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${font2.className} antialiased`}>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
