@@ -80,7 +80,7 @@ export default function index({ modal, projects }) {
             const { src } = project;
             return (
               <div className={`${styles.modal}`} key={`modal_${index}`}>
-                <Image src={`/image/${src}`} width={450} height={450} alt="image" className="w-96 h-auto" />
+                <Image src={`/image/${src}`} width={450} height={450} alt="image" className="w-[500px] h-auto" />
               </div>
             );
           })}

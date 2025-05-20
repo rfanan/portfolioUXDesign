@@ -1,6 +1,6 @@
 .modalContainer {
-  height: 450px;
-  width: 450px;
+  height: 550px;
+  width: 550px;
   position: absolute;
   overflow: hidden;
   pointer-events: none;
