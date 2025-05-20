@@ -8,13 +8,13 @@ import Magnetic from "../animate/magnetic";
 const scaleAnimate = {
   initial: { scale: 0 },
   enter: { scale: 1, transition: { duration: 0.4, ease: [0.66, 0.05, 0.36, 1] } },
-  closed: { scale: 0, transition: { duration: 0.4, ease: [0.66, 0.05, 0.36, 1] } },
+  closed: { scale: 0, transition: { duration: 0.4, ease: [0.45, 0.05, 0.55, 0.95] } },
 };
 
 const slideUp = {
-  initial: { y: 0 },
-  enter: { y: -100, transition: { duration: 0.4, ease: [0.66, 0.05, 0.36, 1] } },
-  closed: { y: 0, transition: { duration: 0.4, ease: [0.66, 0.05, 0.36, 1] } },
+  initial: { y: 0, opacity: 1 },
+  enter: { y: -10, opacity: 0, transition: { duration: 0.4, ease: [0.66, 0.05, 0.36, 1] } },
+  closed: { y: 0, opacity: 1, transition: { duration: 0.4, ease: [0.66, 0.05, 0.36, 1] } },
 };
 
 export default function Index() {
@@ -36,10 +36,10 @@ export default function Index() {
 
   return (
     <>
-      <motion.div variants={slideUp} initial="initial" animate={isButton ? "enter" : "closed"} className={`fixed top-0 left-0 w-screen z-50`}>
-        <div className="font-semibold w-full relative flex justify-between py-10 px-44 cursor-pointer ">
+      <motion.div variants={slideUp} initial="initial" animate={isButton ? "enter" : "closed"} className={`hidden md:block fixed top-0 left-0 w-screen z-50`}>
+        <div className="font-semibold w-full relative flex justify-between  md:py-3 md:px-24 xl:py-10 xl:px-44 cursor-pointer ">
           <div className="hover:text-lime-400">Rofi'anan</div>
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 md:text-sm xl:text-base">
             <Magnetic>
               <div className="hover:text-lime-400">Home</div>
             </Magnetic>

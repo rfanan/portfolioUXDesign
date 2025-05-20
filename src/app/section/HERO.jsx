@@ -47,10 +47,10 @@ const HERO = () => {
                 <img src="/icon/star.png" alt="star" className="w-16 lg:w-14 py-4 md:py-0 " />
                 Every pixel
                 <span className="inline-flex justify-center items-center px-2">
-                  <div className="w-14 h-14 md:w-10 md:h-10 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
+                  <div className="w-14 h-14 md:w-14 md:h-14 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
                     <PenTool color="#ffffff" className="w-4 h-4 lg:w-4 lg:h-4" />
                   </div>
-                  <div className="w-14 h-14 md:w-10 md:h-10 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
+                  <div className="w-14 h-14 md:w-14 md:h-14 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
                     <Spline color="#ffffff" className="w-4 h-4 lg:w-4 lg:h-4" />
                   </div>
                 </span>
