@@ -14,12 +14,14 @@ const projects = [
     category: "UI/UX Design (Mobile)",
     color: "black",
     src: "kalem.png",
+    url: "https://www.behance.net/gallery/201844075/Kalem-Mental-healt-app",
   },
   {
     title: "Photocomics",
     category: "Design & Development",
     color: "black",
     src: "PhotoComics.png",
+    url: "https://photocomics.netlify.app/",
   },
   {
     title: "Maxim",
@@ -46,7 +48,7 @@ export default function main() {
       <p className="py-10 px-10 w-full text-textPrimary/50">{`{ Recent project } `}</p>
       <div className={`felx flex-wrap items-center justify-center w-full`}>
         {dataSlice.map((project, index) => {
-          return <List key={index} index={index} title={project.title} category={project.category} setModal={setModal} />;
+          return <List key={index} index={index} title={project.title} category={project.category} url={project.url} setModal={setModal} />;
         })}
       </div>
       <div className="hidden md:block">
