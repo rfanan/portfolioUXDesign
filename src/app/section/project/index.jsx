@@ -48,7 +48,7 @@ export default function main() {
       <p className="py-10 px-10 w-full text-textPrimary/50">{`{ Recent project } `}</p>
       <div className={`felx flex-wrap items-center justify-center w-full`}>
         {dataSlice.map((project, index) => {
-          return <List key={index} index={index} title={project.title} category={project.category} url={project.url} setModal={setModal} />;
+          return <List key={index} index={index} src={project.src} title={project.title} category={project.category} url={project.url} setModal={setModal} />;
         })}
       </div>
       <div className="hidden md:block">
@@ -57,7 +57,23 @@ export default function main() {
       {/* Button */}
       <div className="my-16">
         <Magnet>
-          <Button onClick={() => Swal.fire({ title: "Oops!", text: " This function is being improved. Stay tuned!", icon: "info", confirmButtonText: "Okay", confirmButtonColor: "#328E6E" })}>
+          <Button
+            onClick={() =>
+              Swal.fire({
+                title: "Oops!",
+                text: " This function is being improved. Stay tuned!",
+                icon: "info",
+                confirmButtonText: "Okay",
+                confirmButtonColor: "#328E6E",
+                backdrop: `
+              rgba(0,0,123,0.4)
+              url("https://gist.githubusercontent.com/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif")
+              left top  / 250px 150px
+              no-repeat
+              `,
+              })
+            }
+          >
             <MoveUpRight />
             Archive
             <h1>( {countData} )</h1>
