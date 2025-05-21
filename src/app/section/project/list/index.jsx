@@ -10,8 +10,8 @@ export default function index({ index, src, title, category, url, setModal }) {
         title: "Oops 😢",
         text: "The link to this project isn't available anymore. It might’ve been deleted ",
         icon: "warning",
-        
-        confirmButtonText: "okey",
+
+        confirmButtonText: "Okay",
         confirmButtonColor: "#328E6E",
         backdrop: `
               rgba(0,0,123,0.4)
