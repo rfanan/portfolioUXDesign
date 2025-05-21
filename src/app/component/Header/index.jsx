@@ -68,7 +68,7 @@ export default function Index() {
         <Magnetic>
           <Button
             onClick={() => SetIsActive(!isActive)}
-            className={`${isActive ? "bg-lime-400" : "bg-PrimaryBlack"} border border-[#F2F7F2]/10 relative h-16 w-16  md:h-20 md:w-20 cursor-pointer flex items-center justify-center`}
+            className={`${isActive ? "bg-lime-400" : "bg-PrimaryBlack"} border border-[#F2F7F2]/10 relative h-20 w-20  md:h-24 md:w-24 xl:w-28 xl:h-28 cursor-pointer flex items-center justify-center`}
           >
             <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
           </Button>
