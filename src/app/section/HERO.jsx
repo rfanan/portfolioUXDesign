@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Magnetic from "../component/animate/magnetic";
 import Image from "next/image";
 import Button from "../component/button";
 import { Command, Dribbble, Facebook, Instagram, Linkedin, Pencil, PenLine, PenTool, Spline, SplineIcon } from "lucide-react";
 import Social from "../component/social";
 import Magnet from "../component/animate/magnetic";
+import DecryptedText from "../component/decryptText";
 
 const HERO = () => {
+  // buat costum animate decrypted text
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const check = () => setIsDesktop(window.innerWidth >= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
   const style = "flex justify-center items-center md:border-[0.5px] md:border-lime-400/40";
 
   return (
@@ -44,16 +53,50 @@ const HERO = () => {
           <div className="">
             <div className="text-4xl lg:text-4xl xl:text-5xl font-semibold leading-snug lg:leading-snug xl:leading-relaxed">
               <img src="/icon/star.png" alt="star" className="w-16 py-4 lg:py-2 lg:w-10 xl:w-14" />
-              Every pixel
-              <span className="inline-flex justify-center items-center px-2">
-                <div className="w-14 h-14 md:w-16 md:h-11 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
-                  <PenTool color="#ffffff" className="w-4 h-4 lg:w-4 lg:h-4" />
+              <DecryptedText
+                text="Every pixel"
+                speed={70}
+                maxIterations={10}
+                useOriginalCharsOnly="true"
+                sequential="true"
+                className="revealed"
+                parentClassName="all-letters"
+                encryptedClassName="encrypted"
+                animateOn={isDesktop ? "view" : ""}
+                revealDirection="start"
+              />
+              <span className="inline-flex justify-center align-middle items-center px-2">
+                <div className="w-14 h-14 md:w-11 md:h-11 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
+                  <PenTool color="#ffffff" className="w-4 h-4 lg:w-3 lg:h-3" />
                 </div>
-                <div className="w-14 h-14 md:w-16 md:h-11 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
-                  <Spline color="#ffffff" className="w-4 h-4 lg:w-4 lg:h-4" />
+                <div className="w-14 h-14 md:w-11  md:h-11 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
+                  <Spline color="#ffffff" className="w-4 h-4 lg:w-3 lg:h-3" />
                 </div>
               </span>
-              matters. makes it meaningful, clarity, and humane.
+              <DecryptedText
+                text="matters."
+                speed={150}
+                maxIterations={70}
+                sequential="true"
+                useOriginalCharsOnly="true"
+                className="revealed"
+                parentClassName="all-letters"
+                encryptedClassName="encrypted"
+                animateOn={isDesktop ? "view" : ""}
+                revealDirection="start"
+              />
+              <DecryptedText
+                text="makes it meaningful, clarity, and humane."
+                speed={60}
+                maxIterations={10}
+                sequential="true"
+                className="revealed"
+                useOriginalCharsOnly="true"
+                parentClassName="all-letters"
+                encryptedClassName="encrypted"
+                animateOn={isDesktop ? "view" : ""}
+                revealDirection="start"
+              />
             </div>
           </div>
         </div>

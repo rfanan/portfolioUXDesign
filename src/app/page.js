@@ -48,8 +48,8 @@ export default function Home() {
         <StickyCursore />
         <Header />
         {/* pw supabase project portfolio JVTZbmZezhMXqKbz */}
-        <HeroSection />
         {/* <Hero /> */}
+        <HeroSection />
         <div className="relative">
           <div ref={ref} className="relative flex items-center justify-center min-h-svh overflow-hidden " style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}>
             <div className="fixed top-[-10vh] right-0 h-[120vh] w-full">
