@@ -35,13 +35,13 @@ export default function index({ index, src, title, category, url, setModal }) {
           onMouseLeave={() => {
             setModal({ active: false, index });
           }}
-          className={`${styles.project} border-b-2 cursor-pointer flex flex-wrap justify-between py-5 md:p-14 xl:p-14 w-full items-center `}
+          className={`${styles.project} border-b-2 ${index === 0 ? "border-t-2" : ""} cursor-pointer flex flex-wrap justify-between py-5 md:p-8 lg:p-14 xl:p-16 w-full items-center `}
         >
-          <div className="md:hidden py-4">
+          <div className="lg:hidden py-4 w-full flex justify-center">
             <Image src={`/image/${src}`} width={540} height={430} alt="image" />
           </div>
-          <h2 className="font-medium text-2xl md:text-6xl xl:text-7xl">{title}</h2>
-          <p className="text-xs md:text-sm">{category}</p>
+          <h2 className="font-medium text-2xl md:text-4xl lg:text-6xl xl:text-8xl pl-6 md:pl-2 lg:pl-4 xl:pl-5">{title}</h2>
+          <p className="text-xs md:text-sm lg:text-sm xl:text-lg pr-6 md:pr-10 lg:pr-4 xl:pr-5">{category}</p>
         </div>
       </div>
     </>

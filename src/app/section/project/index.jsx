@@ -44,8 +44,8 @@ export default function main() {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
-    <main className={`flex flex-col py-14 px-4 md:px-36 xl:px-44 min-h-screen justify-center items-center`}>
-      <p className="py-10 px-10 w-full text-textPrimary/50">{`{ Recent project } `}</p>
+    <main className={`flex flex-col py-14 px-4 md:px-16 lg:px-28 xl:px-44 min-h-screen justify-center items-center`}>
+      <div className="flex py-10 md:pl-11 lg:pl-14 xl:pl-20 w-full text-textPrimary/50">{`{ Recent project } `}</div>
       <div className={`felx flex-wrap items-center justify-center w-full`}>
         {dataSlice.map((project, index) => {
           return <List key={index} index={index} src={project.src} title={project.title} category={project.category} url={project.url} setModal={setModal} />;
