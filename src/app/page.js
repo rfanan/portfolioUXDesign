@@ -45,7 +45,9 @@ export default function Home() {
   return (
     <main className="relative" ref={scrollSmooth}>
       <div className="bg-[#F2F7F2]">
-        <StickyCursore />
+        <div className="hidden md:flex">
+          <StickyCursore />
+        </div>
         <Header />
         {/* pw supabase project portfolio JVTZbmZezhMXqKbz */}
         {/* <Hero /> */}
