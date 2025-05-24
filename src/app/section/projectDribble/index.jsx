@@ -19,11 +19,11 @@ export default function index() {
     const dateNow = Date.now();
 
     if (cacheData && cacheTime && dateNow - cacheTime < timeRefresh) {
-      console.log("Menggunakan data dari localStorage");
+      // console.log("Menggunakan data dari localStorage");
       setData(JSON.parse(cacheData));
       setLoading(false);
     } else {
-      console.log("Fetching data dari API...");
+      // console.log("Fetching data dari API...");
       setLoading(true);
       getShots()
         .then((results) => {
@@ -42,7 +42,7 @@ export default function index() {
   useEffect(() => {
     getUser()
       .then((results) => {
-        console.log(results);
+        // console.log(results);
         setUserData(results);
       })
       .catch((error) => {
