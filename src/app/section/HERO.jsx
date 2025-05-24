@@ -8,7 +8,7 @@ import Magnet from "../component/animate/magnetic";
 import DecryptedText from "../component/decryptText";
 
 const HERO = () => {
-  // buat costum animate decrypted text
+  // buat on off animate decrypted text
   const [isDesktop, setIsDesktop] = useState(false);
   useEffect(() => {
     const check = () => setIsDesktop(window.innerWidth >= 768);
@@ -16,6 +16,7 @@ const HERO = () => {
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
   }, []);
+
   const style = "flex justify-center items-center md:border-[0.5px] md:border-lime-400/40";
 
   return (
@@ -45,13 +46,13 @@ const HERO = () => {
 
         {/* 6 */}
         <div className={`${style} hidden md:flex col-span-3 row-span-2 bg-[url(/bg/bgParalax.png)] bg-cover bg-center`}>
-          <img src="/icon/everyday.png" alt="everyday" className="rotate-0 md:w-36 lg:w-28 xl:w-44 " />
+          <img src="/icon/everyday.png" alt="everyday" className="rotate-0 md:w-36 lg:w-34 xl:w-44 " />
         </div>
 
         {/* 7 */}
         <div className={`${style}  col-span-24 md:col-span-15 lg:col-span-11 lg:py-2 lg:text-xl xl:text-5xl  text-textPrimary md:row-span-2 px-6`}>
           <div className="">
-            <div className="text-4xl lg:text-4xl xl:text-5xl font-semibold leading-snug lg:leading-snug xl:leading-relaxed">
+            <div className="text-4xl lg:text-3xl xl:text-5xl font-bold leading-snug lg:leading-snug xl:leading-relaxed">
               <img src="/icon/star.png" alt="star" className="w-16 py-4 lg:py-2 lg:w-10 xl:w-14" />
               <DecryptedText
                 text="Every pixel"
