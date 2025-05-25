@@ -68,10 +68,10 @@ const HERO = () => {
               />
               <span className="inline-flex justify-center align-middle items-center px-2">
                 <div className="w-14 h-14 md:w-11 md:h-11 xl:w-16 xl:h-16 aspect-square rounded-full bg-blue-600 flex items-center justify-center -mr-3  z-20">
-                  <PenTool color="#ffffff" className="w-4 h-4 lg:w-3 lg:h-3" />
+                  <PenTool color="#ffffff" className="w-4 h-4 lg:w-3 lg:h-3 xl:w-5 xl:h-5 " />
                 </div>
                 <div className="w-14 h-14 md:w-11  md:h-11 xl:w-16 xl:h-16  aspect-square rounded-full bg-green-600 flex items-center justify-center -z-10">
-                  <Spline color="#ffffff" className="w-4 h-4 lg:w-3 lg:h-3" />
+                  <Spline color="#ffffff" className="w-4 h-4 lg:w-3 lg:h-3 xl:w-5 xl:h-5" />
                 </div>
               </span>
               <DecryptedText

@@ -27,7 +27,7 @@ export default function index() {
       setLoading(true);
       getShots()
         .then((results) => {
-          console.log(results);
+          // console.log(results);
           setData(results);
           localStorage.setItem(CACHE_KEY, JSON.stringify(results));
           localStorage.setItem(CACHE_TIME_KEY, Date.now());
