@@ -13,7 +13,7 @@ const scaleAnimate = {
 
 const slideUp = {
   initial: { y: 0, opacity: 1 },
-  enter: { y: -40, opacity: 0, transition: { duration: 0.2, cubicBezier: [0, 0, 0.58, 1] } },
+  enter: { y: -40, opacity: 0, transition: { duration: 0.1, cubicBezier: [0, 0, 0.58, 1] } },
   closed: { y: 0, opacity: 1, transition: { duration: 0.8, cubicBezier: [0, 0, 0.58, 1] } },
 };
 
@@ -29,13 +29,11 @@ export default function Index() {
       setIsButton(y > 400);
 
       const isScrollDown = y > prevScroll.current;
-
       if (isScrollDown) {
         setIsNav(y > 0);
       } else {
         setIsNav(y > 200);
       }
-
       prevScroll.current = y;
     };
 
@@ -46,7 +44,7 @@ export default function Index() {
   return (
     <>
       <motion.div variants={slideUp} initial="initial" animate={isNav ? "enter" : "closed"} className={`hidden md:block fixed top-0 left-0 w-screen z-50`}>
-        <div className="font-semibold w-full relative flex justify-between  md:py-3 md:px-24 xl:py-8 xl:px-44 cursor-pointer ">
+        <div className="font-semibold w-full relative flex justify-between  md:py-3 md:px-24 xl:py-7 xl:px-44 cursor-pointer ">
           <div className="relative inline-flex group cursor-pointer">
             <Magnetic>
               <div className=" hover:text-lime-400 transition-all duration-75">Rofi'anan</div>
